@@ -1,0 +1,13 @@
+C:\Users\1\source\repos\RunViewer\RunViewer\bin\Debug\RunViewer.exe.config
+C:\Users\1\source\repos\RunViewer\RunViewer\bin\Debug\RunViewer.exe
+C:\Users\1\source\repos\RunViewer\RunViewer\bin\Debug\RunViewer.pdb
+C:\Users\1\source\repos\RunViewer\RunViewer\obj\Debug\RunViewer.csprojAssemblyReference.cache
+C:\Users\1\source\repos\RunViewer\RunViewer\obj\Debug\MainWindow.g.cs
+C:\Users\1\source\repos\RunViewer\RunViewer\obj\Debug\App.g.cs
+C:\Users\1\source\repos\RunViewer\RunViewer\obj\Debug\RunViewer_MarkupCompile.cache
+C:\Users\1\source\repos\RunViewer\RunViewer\obj\Debug\MainWindow.baml
+C:\Users\1\source\repos\RunViewer\RunViewer\obj\Debug\RunViewer.g.resources
+C:\Users\1\source\repos\RunViewer\RunViewer\obj\Debug\RunViewer.Properties.Resources.resources
+C:\Users\1\source\repos\RunViewer\RunViewer\obj\Debug\RunViewer.csproj.GenerateResource.cache
+C:\Users\1\source\repos\RunViewer\RunViewer\obj\Debug\RunViewer.exe
+C:\Users\1\source\repos\RunViewer\RunViewer\obj\Debug\RunViewer.pdb

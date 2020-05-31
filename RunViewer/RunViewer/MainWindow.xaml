@@ -1,0 +1,59 @@
+﻿<Window x:Class="RunViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.7*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Icon" Grid.Column="0"/>
+            <Label Content="FileName" Grid.Column="1"/>
+            <Label Content="FilePath" Grid.Column="2"/>
+            <Label Content="Command" Grid.Column="3"/>
+            <Label Content="Type" Grid.Column="4"/>
+        </Grid>
+        <ListView ItemsSource="{Binding ProgramItems}"
+                  HorizontalContentAlignment="Stretch"
+                  Grid.Row="1">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="3*"/>
+                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition Width="0.7*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding Icon}" Grid.Column="0"/>
+                        <Label Content="{Binding FileName}" Grid.Column="1"/>
+                        <Label Content="{Binding FilePath}" Grid.Column="2"/>
+                        <Label Content="{Binding CommandString}" Grid.Column="3"/>
+                        <Label Content="{Binding type}" Grid.Column="4"/>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ProgressBar 
+            x:Name="progressBar"
+            IsIndeterminate="True"
+            Grid.Row="1"
+            Height="20"
+            Width="300" 
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"/>
+    </Grid>
+</Window>
